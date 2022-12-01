@@ -38,12 +38,12 @@ public class GreekRestaurants extends AppCompatActivity {
                 String selected = restaurantList.getItemAtPosition(position).toString();
 
                 if(selected.equals("Volos Greek Cuisine")){
-                    address = "456 Danforth Ave, Toronto, ON M4K 1P3";
+                    address = "133 Richmond St W, Toronto, ON M5H 2L3";
                     loadMap(view);
                 }
                 if(selected.equals("Mezes")){
 
-                    address = "133 Richmond St W, Toronto, ON M5H 2L3";
+                    address = "456 Danforth Ave, Toronto, ON M4K 1P3";
                     loadMap(view);
                 }
                 if(selected.equals("Karbouzi")){

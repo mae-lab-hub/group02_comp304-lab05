@@ -37,12 +37,12 @@ public class ChineseRestaurants extends AppCompatActivity {
                 String selected = restaurantList.getItemAtPosition(position).toString();
 
                 if(selected.equals("Swatow Restaurant")){
-                    address = "195 Dundas St W, Toronto, ON M5G 1C7";
+                    address = "309 Spadina Ave., Toronto, ON M5T 1H1";
                     loadMap(view);
                 }
                 if(selected.equals("Hong Shing Restaurant")){
 
-                    address = "309 Spadina Ave., Toronto, ON M5T 1H1";
+                    address = "195 Dundas St W, Toronto, ON M5G 1C7";
                     loadMap(view);
                 }
                 if(selected.equals("Lee Chen Asian Bistro")){

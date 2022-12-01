@@ -35,12 +35,12 @@ public class IndianRestaurants extends AppCompatActivity {
                 String selected = restaurantList.getItemAtPosition(position).toString();
 
                 if(selected.equals("Raj Mahal Indian Cuisine")){
-                    address = "1386 Gerrard St E, Toronto, ON M4L 1Z2";
+                    address = "Dufferin Corners, 1881 Steeles Ave W, Toronto, ON M3H 5Y4";
                     loadMap(view);
                 }
                 if(selected.equals("Leela Indian Food Bar")){
 
-                    address = "Dufferin Corners, 1881 Steeles Ave W, Toronto, ON M3H 5Y4";
+                    address = "1386 Gerrard St E, Toronto, ON M4L 1Z2";
                     loadMap(view);
                 }
                 if(selected.equals("Marigold Indian Bistro")){

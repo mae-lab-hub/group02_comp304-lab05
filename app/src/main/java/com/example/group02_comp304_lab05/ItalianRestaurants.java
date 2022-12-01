@@ -38,12 +38,12 @@ public class ItalianRestaurants extends AppCompatActivity {
                 String selected = restaurantList.getItemAtPosition(position).toString();
 
                 if(selected.equals("La Vecchia Restaurant Uptown")){
-                    address = "2405 Yonge St A, Toronto, ON M4P 2E7";
+                    address = "2373 Yonge St, Toronto, ON M4P 2C8";
                     loadMap(view);
                 }
                 if(selected.equals("Grazie Ristorante")){
 
-                    address = "2373 Yonge St, Toronto, ON M4P 2C8";
+                    address = "2405 Yonge St A, Toronto, ON M4P 2E7";
                     loadMap(view);
                 }
                 if(selected.equals("Donatello Restaurant")){
