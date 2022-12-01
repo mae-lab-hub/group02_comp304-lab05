@@ -175,7 +175,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Address address = addressList.get(0);
             LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
 
-            mMap.setMapType(mMap.MAP_TYPE_HYBRID);
+          //  mMap.setMapType(mMap.MAP_TYPE_HYBRID);
 
 
 
