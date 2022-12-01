@@ -4,12 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/COMP304/lab05/group02_comp304lab05/app/src/main/res/layout/activity_chinese_restaurants.xml" value="0.23229166666666667" />
-        <entry key="..\:/COMP304/lab05/group02_comp304lab05/app/src/main/res/layout/activity_cuisine_list.xml" value="0.23229166666666667" />
-        <entry key="..\:/COMP304/lab05/group02_comp304lab05/app/src/main/res/layout/activity_greek_restaurants.xml" value="0.23229166666666667" />
+        <entry key="..\:/COMP304/lab05/group02_comp304lab05/app/src/main/res/layout/activity_cuisine_list.xml" value="0.26287262872628725" />
+        <entry key="..\:/COMP304/lab05/group02_comp304lab05/app/src/main/res/layout/activity_greek_restaurants.xml" value="0.33" />
         <entry key="..\:/COMP304/lab05/group02_comp304lab05/app/src/main/res/layout/activity_indian_restaurants.xml" value="0.2109375" />
         <entry key="..\:/COMP304/lab05/group02_comp304lab05/app/src/main/res/layout/activity_italian_restaurants.xml" value="0.23229166666666667" />
-        <entry key="..\:/COMP304/lab05/group02_comp304lab05/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
+        <entry key="..\:/COMP304/lab05/group02_comp304lab05/app/src/main/res/layout/activity_main.xml" value="0.46458333333333335" />
         <entry key="..\:/COMP304/lab05/group02_comp304lab05/app/src/main/res/layout/activity_maps.xml" value="0.23229166666666667" />
+        <entry key="..\:/COMP304/lab05/group02_comp304lab05/app/src/main/res/layout/activity_restaurant.xml" value="0.3420074349442379" />
       </map>
     </option>
   </component>

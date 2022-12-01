@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">group02_comp304-lab05</string>
     <string name="title_activity_maps">MapsActivity</string>
+
+    <string-array
+        name="string_array_greek">
+            <item>Volos Greek Cuisine</item>
+        <item>Mezes</item>
+        <item>Karbouzi</item>
+    </string-array>
+
+    <string-array
+        name="string_array_italian">
+        <item>La Vecchia Restaurant Uptown</item>
+        <item>Grazie Ristorante</item>
+        <item>Donatello Restaurant</item>
+    </string-array>
+
 </resources>

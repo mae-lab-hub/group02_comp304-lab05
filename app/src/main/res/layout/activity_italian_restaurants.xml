@@ -5,91 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ItalianRestaurants"
-    android:background="@color/green">
+    android:background="@color/white">
 
-    <TextView
-        android:id="@+id/textView2"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Italian Restaurants"
-        android:gravity="center_horizontal"
-        android:textAlignment="center"
-        android:textColor="@color/red"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </TextView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="50dp"
-        app:layout_constraintTop_toTopOf="@+id/textView2">
-
-        <ImageView
-            android:id="@+id/italianRestaurant2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/italian_restaurant_1"></ImageView>
+        android:orientation="vertical">
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="La Vecchia Restaurant Uptown"
+            android:layout_height="69dp"
+            android:background="@color/black"
+            android:gravity="center_horizontal"
+            android:text="Italian Restaurants"
             android:textAlignment="center"
-            android:background="@color/white"
-            android:textSize="20dp"></TextView>
-    </LinearLayout>
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="225dp"
-        app:layout_constraintTop_toTopOf="@+id/textView2">
+        </TextView>
 
-        <ImageView
-            android:id="@+id/italianRestaurant1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/italian_restaurant_1"></ImageView>
-
-        <TextView
-            android:layout_width="match_parent"
+        <ListView
+            android:id="@+id/italianList"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Grazie Ristorante"
+            android:divider="@color/black"
+            android:dividerHeight="1dp"
             android:textAlignment="center"
-            android:background="@color/white"
-            android:textSize="20dp"></TextView>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/textView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499">
+
+        </ListView>
+
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="400dp"
-        app:layout_constraintTop_toTopOf="@+id/textView2">
-
-        <ImageView
-            android:id="@+id/italianRestaurant3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/italian_restaurant_1"></ImageView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Donatello Restaurant"
-            android:textAlignment="center"
-            android:background="@color/white"
-            android:textSize="20dp"></TextView>
-    </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

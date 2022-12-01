@@ -24,9 +24,11 @@ import android.location.Location;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -46,9 +48,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     Marker mCurrLocationMarker;
     GoogleApiClient mGoogleApiClient;
     LocationRequest mLocationRequest;
-
     String address;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +56,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         Bundle extras = getIntent().getExtras();
         address = extras.getString("Address");
+
         Toast.makeText(this, address, Toast.LENGTH_SHORT).show();
+
         //searchLocation(getCurrentFocus());
 
 // Obtain the SupportMapFragment and get notified when the map is ready to be used.
@@ -64,11 +66,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+
     }
+
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+
 
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (ContextCompat.checkSelfPermission(this,
@@ -168,7 +174,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
             Address address = addressList.get(0);
             LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
+
             mMap.setMapType(mMap.MAP_TYPE_HYBRID);
+
+
+
             mMap.addMarker(new MarkerOptions().position(latLng).title(location));
             mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
             Toast.makeText(getApplicationContext(),address.getLatitude()+" "+address.getLongitude(),Toast.LENGTH_LONG).show();
